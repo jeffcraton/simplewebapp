@@ -7,6 +7,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     public readonly string MachineName;
+    public string someEnvironmentVariable = Environment.GetEnvironmentVariable("currentenv");
 
     public IndexModel(ILogger<IndexModel> logger)
     {
